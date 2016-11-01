@@ -1,6 +1,6 @@
 <?php include "menu.php";?>
 <pre>
-CREATE DATABASE esim2;
+CREATE DATABASE esim2 DEFAULT CHARSET=utf8 COLLATE=utf8_swedish_ci;
 
 USE esim2;
 
@@ -14,7 +14,7 @@ sukunimi VARCHAR(50)
 INSERT INTO asiakkaat (etunimi,sukunimi) VALUES('Matti','Virtanen');
 INSERT INTO asiakkaat (etunimi,sukunimi) VALUES('Jussi','Virta');
 INSERT INTO asiakkaat (etunimi,sukunimi) VALUES('Liisa','Joki');
-INSERT INTO asiakkaat (etunimi,sukunimi) VALUES('Aino','Jokinen');
+INSERT INTO asiakkaat (etunimi,sukunimi) VALUES('Aino','Järvinen');
 
 GRANT ALL ON esim2.* TO 'phpuser'@'localhost' IDENTIFIED BY 'phppass';
 
